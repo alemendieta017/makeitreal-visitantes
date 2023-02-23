@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
 
 const visitorSchema = new mongoose.Schema({
-  name : String,
-  date : String
+  name : {type: String},
+  date : {type: Date, default : Date.now},
+  count : {type: Number}
 })
 
 const Visitor = mongoose.model('Visitor', visitorSchema)

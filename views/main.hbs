@@ -1,1 +1,14 @@
-<p>hlel</p>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nombre</th>
+    <th>Count</th>
+  </tr>
+  {{#each visitors}}
+  <tr>
+    <td>{{visitors._id}}</td>
+    <td>{{visitors.name}}</td>
+    <td>{{visitors.count}}</td>
+  </tr>
+  {{/each}}
+</table>
