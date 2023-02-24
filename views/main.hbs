@@ -5,10 +5,10 @@
     <th>Count</th>
   </tr>
   {{#each visitors}}
-  <tr>
-    <td>{{visitors._id}}</td>
-    <td>{{visitors.name}}</td>
-    <td>{{visitors.count}}</td>
-  </tr>
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.count}}</td>
+    </tr>
   {{/each}}
 </table>
