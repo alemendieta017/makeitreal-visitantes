@@ -1,14 +1,18 @@
 <table>
-  <tr>
-    <th>Id</th>
-    <th>Nombre</th>
-    <th>Count</th>
-  </tr>
-  {{#each visitors}}
+  <thead>
     <tr>
-      <td>{{this._id}}</td>
-      <td>{{this.name}}</td>
-      <td>{{this.count}}</td>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Count</th>
     </tr>
-  {{/each}}
+  </thead>
+  <tbody>
+    {{#each visitors}}
+      <tr>
+        <td>{{this._id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.count}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
 </table>
